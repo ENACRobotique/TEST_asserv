@@ -1,0 +1,23 @@
+#pragma once
+
+#define MOTOR_1_PWM PB4
+#define MOTOR_1_DIR PB1
+#define MOTOR_2_PWM PB5
+#define MOTOR_2_DIR PB2
+#define MOTOR_3_PWM PB10
+#define MOTOR_3_DIR PB15
+
+#define ENCODER_1_A PC14
+#define ENCODER_1_B PC13
+#define ENCODER_2_A PC3
+#define ENCODER_2_B PC2
+#define ENCODER_3_A PC9 
+#define ENCODER_3_B PC8
+
+#define DISPLAY_CLK PB11
+#define DISPLAY_DATA PB12
+#define COLOR PC6
+#define POS_BUTTON PC5
+#define TIRETTE PC15
+
+#define INCREMENT_TO_MM 0.2605932

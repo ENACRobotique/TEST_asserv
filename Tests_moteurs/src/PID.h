@@ -9,9 +9,9 @@
 class PID{
 
     private:
-        double kp=2.7;
+        double kp=3.3;
         double ki=6.1;
-        double kd=0.012;
+        double kd=0.0384;
         double min;
         double max;
         double integral=0;
@@ -19,18 +19,13 @@ class PID{
         int cmd;
 
     public :
+        double update_cmd(double error, double speed_error, double period);
 
-        int update_cmd(double error);
-        void set_integral(double error,double freq);
-        void set_derivative(double speed_cons, double speed);
-        double get_kp();
-        double get_ki();
-        double get_kd();
-        double get_integral();
-        double get_derivative();
-
-        
-
+        double get_kp(){ return this->kp; }
+        double get_kd(){ return this->kd; }
+        double get_ki(){ return this->ki; }
+        double get_integral(){ return this->integral; }
+        double get_derivative(){ return this->derivative; }
 };
 
 #endif
